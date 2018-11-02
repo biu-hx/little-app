@@ -1,0 +1,27 @@
+{
+  "pages": [
+    "pages/getuserinfor/getuserinfor",
+    "pages/bingli/bingli",
+    "pages/nologin/nologin",
+    "pages/usehelp/usehelp",
+    "pages/video/video",
+    "pages/index/index",
+    "pages/login/login",
+    "pages/setpwd/setpwd",
+    "pages/personal/personal",
+    "pages/changeinfor/changeinfor",
+    "pages/record/record",
+    "pages/income/income",
+    "pages/resetpwd/resetpwd",
+    "pages/forgetpwd/forgetpwd",
+    "pages/recorddetail/recorddetail"
+  ],
+  "window": {
+    "backgroundTextStyle": "#fff",
+    "navigationBarBackgroundColor": "#1fce87",
+    "navigationBarTitleText": "问诊通",
+    "navigationBarTextStyle": "#fff",
+    "backgroundColor": "#f0f0f0"
+  },
+  "disableScroll": true
+}
