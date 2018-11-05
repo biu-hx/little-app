@@ -1,0 +1,12 @@
+<!--setpwd.wxml-->
+<view class="container">
+  <form action="" bindsubmit="handleSuccess" report-submit="true">
+    <view class="container_view login_view">
+      <input class="user_name common_input" bindinput="handleInput0" name="oldpassword" type="password"
+             placeholder-class="phcolor" placeholder="输入新密码"/>
+      <input class="user_pwd common_input" bindinput="handleInput1" name="password" type="password"
+             placeholder-class="phcolor" placeholder="确认新密码"/>
+    </view>
+    <button class="btn_primary {{isgreen}}" formType="{{isgreen ? 'submit' : ''}}">提交</button>
+  </form>
+</view>

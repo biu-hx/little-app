@@ -1,0 +1,14 @@
+<view>
+  <form bindsubmit="formSubmit" report-submit="true">
+    <view class="container pt35 pb48">
+      <view class="container_view edit_view">
+        <text class="edit_title">{{status[type].title}}</text>
+        <textarea focus="{{isFocus}}" value="{{value}}" name="content" maxlength="{{status[type].maxLength}}"
+                  auto-height class="edit_input" placeholder=""
+                  bindlinechange="handleLine"></textarea>
+        <text wx:if="{{status[type].text}}" class="edit_desc">{{status[type].text}}</text>
+      </view>
+      <button class="btn_green" formType="submit">保存</button>
+    </view>
+  </form>
+</view>

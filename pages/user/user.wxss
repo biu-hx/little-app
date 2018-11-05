@@ -1,0 +1,54 @@
+/**nologin.wxss**/
+.avatar_title{
+  width: 100%;
+  height: 280rpx;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+.avatar_title>image{
+  width: 100%;
+  height: 280rpx;
+  position: absolute;
+  z-index: -1;
+}
+.avatar_view{
+  width: 145rpx;
+  height: 145rpx;
+  margin-bottom: 35rpx;
+  border-radius: 50%;
+  margin-top: 35rpx;
+  position: relative;
+}
+.avatar_view::before{
+  content: '';
+  position: absolute;
+  left: -7rpx;
+  top: -7rpx;
+  width: 145rpx;
+  height: 145rpx;
+  border-radius: 50%;
+  border: 7rpx solid #8ce0be;
+}
+.avatar_view::after{
+  content: '';
+  position: absolute;
+  left: -14rpx;
+  top: -14rpx;
+  width: 159rpx;
+  height: 159rpx;
+  border-radius: 50%;
+  border: 7rpx solid #49d59c;
+}
+.user_avatar{
+  display: block;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  overflow: hidden;
+}
+.user_name{
+  font-size: 34rpx;
+  color: white;
+}

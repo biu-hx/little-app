@@ -1,0 +1,17 @@
+/**nologin.wxss**/
+.nologin_image{
+  margin-top: 110rpx;
+  margin-bottom: 82rpx;
+  height: 233rpx;
+  width: 306rpx;
+}
+.no_login_text{
+  display: block;
+  font-size: 30rpx;
+  margin-bottom: 134rpx;
+  color: #888;
+  text-align: center;
+}
+.img_view{
+  text-align: center;
+}

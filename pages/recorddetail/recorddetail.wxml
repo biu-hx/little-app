@@ -1,0 +1,62 @@
+<view>
+  <view class="container">
+    <view class="container_view recorddetail_view">
+      订单号：{{detail.orderNumber}}
+      <button class="busy{{detail.status}}">{{status[detail.status]}}</button>
+    </view>
+  </view>
+  <view class="container">
+    <view class="container_view recorddetail_order">
+      <view class="recorddetail_title">订单详情</view>
+      <view class="order_detail pt10">
+        <view class="detail_title">设备编码</view>
+        {{detail.detail.equipment}}
+      </view>
+      <view class="order_detail">
+        <view class="detail_title">设备地址</view>
+        {{detail.detail.address}}
+      </view>
+      <view class="order_detail">
+        <view class="detail_title">订单时间</view>
+        {{detail.detail.payTime}}
+      </view>
+      <view class="order_detail">
+        <view class="detail_title">订单价格</view>
+        ￥{{detail.detail.price}}
+      </view>
+      <view class="order_detail">
+        <view class="detail_title">问诊时间</view>
+        {{detail.detail.holdingTime}}分钟
+      </view>
+      <!--<view class="order_detail mb35" wx:if="{{detail.status == 11}}">-->
+        <!--<view class="detail_title">退款状态</view>-->
+        <!--<view class="nonormal">{{detail.statusStr}}</view>-->
+      <!--</view>-->
+    </view>
+  </view>
+
+  <view class="container" wx:if="{{detail.call && detail.call.length != 0}}">
+    <view class="container_view recorddetail_order m16">
+      <view class="recorddetail_title">问诊截图</view>
+      <block wx:for="{{detail.call}}" wx:key="index" wx:for-item="item">
+        <view class="image_array mt30" wx:if="{{item.screen && item.screen.length != 0}}">
+          <image wx:for="{{item.screen}}" wx:key="index1" wx:for-item="itemImg" src="{{itemImg}}"></image>
+        </view>
+        <view wx:else class="noImage">无截图！</view>
+        <view class="detail_time">
+          <text>{{index+1}}</text>
+          {{item.begin}} ~ {{item.end}}
+        </view>
+      </block>
+    </view>
+  </view>
+
+  <view class="container" wx:if="{{detail.report && detail.report.length != 0}}">
+    <view class="container_view recorddetail_order m16">
+      <view class="recorddetail_title">患者病历</view>
+      <view class="image_array mt30">
+        <image wx:for="{{detail.report}}" wx:key="index2" wx:for-item="item" src="{{item}}"></image>
+      </view>
+    </view>
+  </view>
+</view>

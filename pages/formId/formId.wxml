@@ -1,0 +1,5 @@
+<!--components/saveFormId/formId.wxml-->
+<form class="form_box" bindsubmit="saveFormId" report-submit="true">
+  <button class="btn-hidden" size="default" form-type="submit"></button>
+  <slot></slot>
+</form>

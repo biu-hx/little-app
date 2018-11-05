@@ -1,0 +1,58 @@
+<!--user.wxml-->
+<view>
+  <view class="record_nav">
+    <text data-dataType="0" bindtap="handleType" class="{{type==0 ? 'active' : ''}}">问诊记录</text>
+    <text data-dataType="1" bindtap="handleType" class="{{type==1 ? 'active' : ''}}">异常结束</text>
+    <text data-dataType="2" bindtap="handleType" class="{{type==2 ? 'active' : ''}}">已完成</text>
+  </view>
+  <block wx:if="{{list1.length != 0 || list.length != 0}}">
+    <view class="container" wx:if="{{list1 && list1.length != 0}}">
+      <view class="container_view">
+        <view class="record_item" data-datatype="{{list1[0].inquiryId}}" bindtap="handleDetail">
+          <view class="record_order">
+            <view class="order_num">
+              订单号：{{list1[0].orderNumber}}
+              <button class="busy1">异常中断</button>
+            </view>
+            <view class="order_time">{{list1[0].payTime}}</view>
+          </view>
+          <image src="../../imgs/arrow_right.png"></image>
+        </view>
+        <view class="btn_view">
+          <button class="btn_border_green" data-datatype="{{list1[0].orderNumber}}"
+                  bindtap="handleElseOver">异常结束
+          </button>
+          <button class="btn_green" data-datatype="{{list1[0].orderNumber}}"
+                  bindtap="handleOver">正常结束
+          </button>
+        </view>
+      </view>
+    </view>
+    <view class="container">
+      <view class="container_view btn_list_view">
+        <block wx:for="{{list}}" wx:key="index" wx:for-item="item">
+          <view class="record_item" data-datatype="{{item.inquiryId}}" bindtap="handleDetail">
+            <view class="record_order">
+              <view class="order_num">
+                订单号：{{item.orderNumber}}
+                <button class="busy{{item.status}}">{{status[item.status]}}</button>
+              </view>
+              <view class="order_time">{{item.payTime}}</view>
+            </view>
+            <image src="../../imgs/arrow_right.png"></image>
+          </view>
+        </block>
+      </view>
+    </view>
+    <view class="getMore" wx:if="{{page<totalPage && isLoading}}" bindtap="handlePage">加载更多</view>
+    <view class="getMore" wx:if="{{!isLoading}}">
+      <image animation="{{animation}}" src="../../imgs/loading.png"></image>
+      正在加载
+    </view>
+    <view class="getMore" wx:if="{{page == totalPage}}">暂无更多收入明细</view>
+  </block>
+  <view wx:else class="nomsg_view">
+    <image src="../../imgs/nomsg.png"></image>
+    <view>暂无数据记录~</view>
+  </view>
+</view>

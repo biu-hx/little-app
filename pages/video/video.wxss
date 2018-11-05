@@ -1,0 +1,112 @@
+.video_loading{
+  width: 100vw;
+  height: 100vh;
+  background: white;
+  padding-top: 324rpx;
+  text-align: center;
+}
+.rotate_loading{
+  display: inline-block;
+  width: 170rpx;
+  height: 170rpx;
+  position: relative;
+}
+.loading_center{
+  width: 110rpx;
+  height: 110rpx;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+.loading_rotate{
+  width: 170rpx;
+  height: 170rpx;
+  position: absolute;
+  left: 0;
+}
+.rotate_text{
+  display: inline-block;
+  width: 100%;
+  font-size: 32rpx;
+  color: #bebdbd;
+  margin-top: 77rpx;
+}
+
+.video_view{
+  width: 100vw;
+  height: 100vh;
+  background: black;
+  position: relative;
+}
+.video_chat{
+  width: 100%;
+  height: 100%;
+  background: pink;
+  z-index: 100;
+}
+.video_doctor{
+  width: 158rpx;
+  height: 238rpx;
+  background: yellow;
+  position: absolute;
+  right: 42rpx;
+  top: 42rpx;
+  border: 1rpx solid white;
+  z-index: 99;
+}
+.fixed_list{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100vw;
+  height: 184rpx;
+  display: flex;
+  align-items: center;
+  background: rgba(0,0,0,.3);
+  color: #fff;
+  font-size: 28rpx;
+  z-index: 101;
+}
+.video_item{
+  text-align: center;
+  width: 33%;
+}
+.video_cover-image{
+   display: inline-block;
+   width: 87rpx;
+   height: 87rpx;
+   margin-bottom: 10rpx;
+   vertical-align: bottom;
+ }
+.video_text{
+  text-align: center;
+}
+image{
+  width: 100%;
+  height: 100%;
+}
+.currentNum{
+  position: absolute;
+  bottom: 0;
+  text-align: center;
+  width: 100%;
+  font-size: 28rpx;
+  line-height: 70rpx;
+  color: white;
+}
+
+live-player{
+  width: 100%;
+  height: 100%;
+  max-width: 100vw;
+  max-height: 100vh;
+  background: red;
+}
+live-pusher{
+  width: 100%;
+  height: 100%;
+  max-width: 100vw;
+  max-height: 100vh;
+  background: black;
+}

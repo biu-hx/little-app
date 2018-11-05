@@ -1,0 +1,52 @@
+<view class="container pt35">
+  <view class="container_view" data-dataType="1" bindtap="handleCheck">
+    <view class="personal_item">
+      <view class="personal_image">
+        <image class="online_time" src="../../imgs/online_time.png"></image>
+      </view>
+      <view class="personal_time">
+        在线时间
+        <view>{{data.uptime[1]}}</view>
+      </view>
+    </view>
+    <image class="arrow_right" src="../../imgs/arrow_right.png"></image>
+  </view>
+  <view class="container_view" data-dataType="2" bindtap="handleCheck">
+    <view class="personal_item">
+      <view class="personal_image">
+        <image class="per_depa" src="../../imgs/per_depa.png"></image>
+      </view>
+      <view class="personal_time">
+        职称
+        <view>{{data.title[1]}}</view>
+      </view>
+    </view>
+    <image class="arrow_right" src="../../imgs/arrow_right.png"></image>
+  </view>
+  <view class="container_view" data-dataType="3" bindtap="handleCheck">
+    <view class="personal_item">
+      <view class="personal_image">
+        <image class="good_at" src="../../imgs/good_at.png"></image>
+      </view>
+      <view class="personal_time">
+        擅长
+        <view>{{data.sections[1]}}</view>
+      </view>
+    </view>
+    <image class="arrow_right" src="../../imgs/arrow_right.png"></image>
+  </view>
+  <view class="container_view" data-dataType="4" bindtap="handleCheck">
+    <view class="personal_item">
+      <view class="personal_image">
+        <image class="good_at" src="../../imgs/infor.png"></image>
+      </view>
+      <view class="personal_time">
+        简介
+        <view class="personal_infor">
+          {{data.content[1]}}
+        </view>
+      </view>
+    </view>
+    <image class="arrow_right" src="../../imgs/arrow_right.png"></image>
+  </view>
+</view>

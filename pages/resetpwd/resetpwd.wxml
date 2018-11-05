@@ -1,0 +1,15 @@
+<!--setpwd.wxml-->
+<view class="container">
+  <form bindsubmit="handleSuccess" report-submit="true">
+    <view class="container_view login_view">
+      <image class="user_image" src="../../imgs/user_image.png"></image>
+      <image class="pwd_image" src="../../imgs/pwd_image.png"></image>
+      <input class="user_name common_input" value="{{phone}}" name="phone" bindinput="phoneInput"
+             placeholder-class="phcolor" placeholder="输入手机号"/>
+      <input class="user_pwd common_input" value="{{code}}" bindinput="handleInput1" name="code"
+             placeholder-class="phcolor" placeholder="输入验证码"/>
+      <button bindtap="handleSend" disabled="{{isSend}}" class="send_verify">{{isSend ? time+'s' : title}}</button>
+    </view>
+    <button class="btn_primary {{isgreen}}" formType="{{isgreen ? 'submit' : ''}}">提交</button>
+  </form>
+</view>

@@ -1,0 +1,63 @@
+<!--user.wxml-->
+<view class="title">打开小程序并授权</view>
+<text class="content">打开微信》发现》小程序，搜索“医生问诊通”，进入小程序。
+  完成授权，方可使用问诊通服务。</text>
+<image src="http://auto-test.mobimedical.cn/help/1.png" mode="widthFix"></image>
+<image src="http://auto-test.mobimedical.cn/help/2.png" mode="widthFix"></image>
+<view class="title">登录</view>
+<text class="content">输入您的【账号】、【密码】，点击【登录】。
+  账号为您的手机号码，若忘记密码可点击忘记密码，通过手机号及验证码重置密码。</text>
+<image src="http://auto-test.mobimedical.cn/help/3.png" mode="widthFix"></image>
+<image src="http://auto-test.mobimedical.cn/help/4.png" mode="widthFix"></image>
+<view class="title">重置密码</view>
+<text class="content">若【忘记密码】或需要【重置密码】，可通过手机号及验证码重置密码。</text>
+<image src="http://auto-test.mobimedical.cn/help/5.png" mode="widthFix"></image>
+<image src="http://auto-test.mobimedical.cn/help/6.png" mode="widthFix"></image>
+<image src="http://auto-test.mobimedical.cn/help/7.png" mode="widthFix"></image>
+<view class="title">上线／下线、个人资料</view>
+<text class="content">登录后默认为离线状态，上线后用户可向您发起视频问诊。
+  点击【设置上下线】旁边的开关切换上／下线状态。
+  点击【个人资料】，可编辑自己的在线时间、职称、擅长及简介信息，保存成功后供患者查看。</text>
+<image src="http://auto-test.mobimedical.cn/help/8.png" mode="widthFix"></image>
+<image src="http://auto-test.mobimedical.cn/help/9.png" mode="widthFix"></image>
+<image src="http://auto-test.mobimedical.cn/help/10.png" mode="widthFix"></image>
+<view class="title">接听</view>
+<text class="content">当没有进入小程序时，有用户发起呼叫时会向你推送通知，点击进入小程序，点击【接听】按钮进入咨询；
+  当你正在使用应用时可直接点击【接听】按钮；
+  当点击【忙，不接】，订单会为您保留60秒，您可在首页接听，超过60秒未接听视为无效订单。</text>
+<image src="http://auto-test.mobimedical.cn/help/11.png" mode="widthFix"></image>
+<image src="http://auto-test.mobimedical.cn/help/12.png" mode="widthFix"></image>
+<image src="http://auto-test.mobimedical.cn/help/13.png" mode="widthFix"></image>
+<view class="title">视频通话、查看患者病例</view>
+<text class="content">在通话界面点击底部【患者病例】按钮，弹出患者发送的病历照片，点击照片可放大预览。进入预览后可左右滑动查看更多。</text>
+<image src="http://auto-test.mobimedical.cn/help/14.png" mode="widthFix"></image>
+<image src="http://auto-test.mobimedical.cn/help/15.png" mode="widthFix"></image>
+<image src="http://auto-test.mobimedical.cn/help/16.png" mode="widthFix"></image>
+<view class="title">结束咨询</view>
+<text class="content">在通话界面点击底部【挂断】按钮-在咨询页面对应的咨询记录点击【结束咨询】，若中途异常中断，且一直没有再发起呼叫，可以点击【异常结束】，这样其他用户也可呼入。</text>
+<image src="http://auto-test.mobimedical.cn/help/17.png" mode="widthFix"></image>
+<image src="http://auto-test.mobimedical.cn/help/18.png" mode="widthFix"></image>
+<view class="title">咨询记录查看</view>
+<text class="content">点击首页【问诊记录】进入咨询列表页，可查看到全部问诊记录、异常结束、已完成这3种状态的订单；
+  点击进入详情，可查看患者视频截图，上传的病例图片，图片可点击放大预览。</text>
+<image src="http://auto-test.mobimedical.cn/help/19.png" mode="widthFix"></image>
+<image src="http://auto-test.mobimedical.cn/help/20.png" mode="widthFix"></image>
+<image src="http://auto-test.mobimedical.cn/help/21.png" mode="widthFix"></image>
+<view class="title">异常结束订单</view>
+<text class="content">当视频通话过程中出现网络异常时，订单异常挂断，在【问诊记录】可查看到该订单；
+  用户可能会在1分钟内向你重新发起视频通话，超过1分钟，将由您来操作该订单是否需要退款；
+  选择【异常结束】则该订单退款，选择【正常结束】则该订单进入已完成状态。
+  选择异常结束状态的订单，点击进入详情，可查看患者视频截图，上传的病例图片，图片可点击放大预览。
+  若有多次异常，可查看到多次咨询记录</text>
+<image src="http://auto-test.mobimedical.cn/help/22.png" mode="widthFix"></image>
+<image src="http://auto-test.mobimedical.cn/help/23.png" mode="widthFix"></image>
+<view class="title">查看收入</view>
+<view class="content">点击【收入统计】，查看总收入及每月收入。</view>
+<image src="http://auto-test.mobimedical.cn/help/24.png" mode="widthFix"></image>
+<image src="http://auto-test.mobimedical.cn/help/25.png" mode="widthFix"></image>
+<view class="title">其他</view>
+<text class="content">退出登录：退出后将置为下线状态，用户将不可呼叫你;
+  使用帮助：可查看小程序医生端的用户手册；
+  安卓客户端下载：可跳转去下载安卓版问诊通APP。</text>
+<image src="http://auto-test.mobimedical.cn/help/26.png" mode="widthFix"></image>
+<image src="http://auto-test.mobimedical.cn/help/27.png" mode="widthFix"></image>

@@ -1,0 +1,115 @@
+/**index.wxss**/
+.avatar_title {
+  width: 100%;
+  height: 260rpx;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  color: white;
+  font-size: 24rpx;
+  line-height: 1;
+}
+
+.avatar_title > image {
+  width: 100%;
+  height: 260rpx;
+  position: absolute;
+  z-index: -1;
+}
+
+.income_title {
+  margin: 45rpx 0 38rpx 0;
+}
+
+.income_all {
+  font-size: 70rpx;
+  margin-bottom: 30rpx;
+}
+
+.income_view {
+  margin-top: 25rpx;
+  margin-bottom: 25rpx;
+  padding: 0 24rpx;
+  box-sizing: border-box;
+}
+
+.income_list {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  text-align: center;
+  font-size: 30rpx;
+  color: #4c4c4c;
+  padding: 38rpx 0;
+}
+
+.income_list:not(:last-child) {
+  border-bottom: 1rpx solid #e2e2e2;
+}
+
+.list_title.income_list {
+  padding-top: 44rpx;
+  padding-bottom: 36rpx;
+  border-bottom: none
+}
+
+.income_list > text {
+  text-align: center;
+}
+
+.income_list > text.income_time {
+  width: 200rpx;
+  text-align: left;
+  position: absolute;
+  left: 0;
+}
+
+.income_list > text.income_count {
+  width: 100%;
+}
+
+.income_list > text.income_price {
+  width: 160rpx;
+  position: absolute;
+  right: 0;
+  text-align: right;
+}
+
+.nomsg_view {
+  width: 100%;
+  height: calc(100vh - 260rpx);
+  background: white;
+  padding-top: 186rpx;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+.nomsg_view > image {
+  width: 311rpx;
+  height: 199rpx;
+  margin-bottom: 90rpx;
+}
+
+.nomsg_view > view {
+  display: block;
+  font-size: 28rpx;
+  color: #bdbdbd;
+}
+
+.getMore {
+  margin-top: 20rpx;
+  margin-bottom: 40rpx;
+  color: #bdbdbd;
+  font-size: 24rpx;
+  line-height: 24rpx;
+  text-align: center;
+}
+
+.getMore > image {
+  display: inline-block;
+  width: 24rpx;
+  height: 24rpx;
+  vertical-align: top;
+  margin-right: 20rpx;
+}

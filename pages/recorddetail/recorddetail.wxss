@@ -1,0 +1,128 @@
+.recorddetail_view{
+  box-sizing: border-box;
+  padding: 0 30rpx;
+  height: 98rpx;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 16rpx 0;
+  font-size: 32rpx;
+  color: #1a1a1a;
+}
+.recorddetail_view>button{
+  display: inline-block;
+  font-size: 24rpx;
+  line-height: 24rpx;
+  padding: 6rpx 15rpx;
+  background: none;
+  border-radius: 5rpx;
+  margin: 0;
+}
+.recorddetail_view>button.busy1{
+  color: #27ce8a;
+  border: 1rpx solid #27ce8a;
+}
+.recorddetail_view>button.busy8{
+  color: #f39700;
+  border: 1rpx solid #f39700;
+}
+.recorddetail_view>button.busy11{
+  color: #f14c4c;
+  border: 1rpx solid #f14c4c;
+}
+.recorddetail_view>button.busy9{
+  color: grey;
+  border: 1rpx solid grey;
+}
+.recorddetail_view>button.busy0{
+  color: yellow;
+  border: 1rpx solid yellow;
+}
+.recorddetail_order{
+  padding: 36rpx 56rpx 0 56rpx;
+  box-sizing: border-box;
+}
+.recorddetail_title{
+  color: #232323;
+  font-size: 28rpx;
+  line-height: 1;
+  position: relative;
+}
+.recorddetail_title:before{
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: -28rpx;
+  transform: translateY(-50%);
+  width: 6rpx;
+  height: 31rpx;
+  border-radius: 2rpx;
+  background: #16cc82;
+}
+.order_detail{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30rpx;
+  font-size: 28rpx;
+  color: #1a1a1a;
+}
+.order_detail>view.detail_title{
+  color: #969696;
+}
+.order_detail>view.nonormal{
+  color: #f14c4c;
+}
+.pt10{
+  padding-top: 40rpx;
+}
+.mb35{
+  margin-bottom: 35rpx;
+}
+.m16{
+  margin: 16rpx 0;
+}
+.image_array{
+  width: calc(100% + 40rpx);
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
+.image_array>image{
+  width: 166rpx;
+  height: 166rpx;
+  flex: none;
+  margin-right: 40rpx;
+  margin-bottom: 26rpx;
+}
+.detail_time{
+  font-size: 20rpx;
+  color: #919191;
+  display: flex;
+  align-items: center;
+  padding-bottom: 28rpx;
+}
+.detail_time>text{
+  display: inline-block;
+  width: 25rpx;
+  height: 25rpx;
+  font-size: 14rpx;
+  text-align: center;
+  line-height: 25rpx;
+  color: #16cc82;
+  border: 1rpx solid #16cc82;
+  border-radius: 50%;
+  margin-right: 13rpx;
+}
+.detail_time:not(:last-child){
+  border-bottom: 1rpx solid #e2e2e2;
+}
+.noImage{
+  display: inline-block;
+  font-size: 34rpx;
+  line-height: 1;
+  margin: 30rpx 0;
+}
+.mt30{
+  margin-top: 30rpx;
+}

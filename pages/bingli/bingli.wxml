@@ -1,0 +1,24 @@
+<view class="video_cover">
+  <view class="bingli_image">
+    <image bindtap="handleBig" wx:for="{{report}}" wx:for-index="idx" wx:key="idx" data-dataid="{{idx}}"
+           class="cover-image" src="{{item.img}}"></image>
+  </view>
+  <view class="big_image_view" wx:if="{{bigImage}}">
+    <image bindtap="closeImage" class="closeBingli" src="../../imgs/close_icon.png"></image>
+    <view class="swiper_view">
+      <swiper interval="2000" current="{{currentId - 1}}" duration="100" bindchange="swiperChange">
+        <block wx:for="{{report}}" wx:for-index="idx" wx:key="idx">
+          <swiper-item>
+            <movable-area scale-area>
+              <movable-view direction="all" scale scale-min="0.5" scale-max="4"
+                            scale-value="{{item.scale ? item.scale: 1}}">
+                <image src="{{item.img}}" mode="aspectFit"></image>
+              </movable-view>
+            </movable-area>
+          </swiper-item>
+        </block>
+      </swiper>
+    </view>
+    <view class="currentNum">{{currentId}}/{{report.length}}</view>
+  </view>
+</view>

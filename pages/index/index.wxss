@@ -1,0 +1,178 @@
+/**index.wxss**/
+.index_container {
+  margin-top: -50rpx;
+}
+
+.index_container_nomsg {
+  margin-top: 17rpx;
+}
+
+.mb16 {
+  margin-bottom: 16rpx;
+}
+
+.container_view {
+  box-sizing: border-box;
+  color: #1a1a1a;
+}
+
+.index_msg {
+  height: 100rpx;
+  position: relative;
+}
+
+.index_msg:not(:last-child) {
+  border-bottom: 1rpx solid #e2e2e2;
+}
+
+.index_msg > image {
+  width: 27rpx;
+  height: 28rpx;
+  vertical-align: top;
+  margin-top: 36rpx;
+  margin-right: 20rpx;
+}
+
+.index_msg > text {
+  font-size: 26rpx;
+  line-height: 100rpx;
+}
+
+.btn_call {
+  display: inline-block;
+  height: 60rpx;
+  border-radius: 60rpx;
+  padding: 0 25rpx;
+  line-height: 60rpx;
+  color: white;
+  font-size: 24rpx;
+  background: #1fce86;
+  position: absolute;
+  right: 0;
+  top: 20rpx;
+}
+
+.index_price {
+  height: 110rpx;
+  display: flex;
+  justify-items: center;
+  align-items: center;
+}
+
+.index_right {
+  width: calc(100% - 112rpx);
+  position: relative;
+}
+
+.index_right > image {
+  width: 17rpx;
+  height: 26rpx;
+  position: absolute;
+  right: 25rpx;
+  top: 42rpx;
+}
+
+.index_right {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1rpx solid #e2e2e2;
+}
+
+.index_right.borderno {
+  border-bottom: none
+}
+
+.index_price > image {
+  width: 52rpx;
+  height: 52rpx;
+  margin-right: 35rpx;
+  margin-left: 25rpx;
+}
+
+.index_right > switch {
+  position: absolute;
+  right: 25rpx;
+  top: 26rpx;
+}
+
+.wx-switch-input {
+  width: 76rpx !important;
+  height: 44rpx !important;
+}
+
+.wx-switch-input::before {
+  width: 72rpx !important;
+  height: 40rpx !important;
+}
+
+.wx-switch-input::after {
+  width: 40rpx !important;
+  height: 40rpx !important;
+}
+
+.index_price > view > text {
+  font-size: 28rpx;
+  line-height: 110rpx;
+}
+
+.p25 {
+  padding: 0 25rpx;
+}
+
+.p37 {
+  padding: 0 37rpx;
+}
+
+.more_function {
+  height: 72rpx;
+  line-height: 72rpx;
+  font-size: 24rpx;
+  border-bottom: 1rpx solid #e2e2e2;
+}
+
+.more_list {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 26rpx;
+}
+
+.use_help {
+  width: 50%;
+  text-align: center;
+  margin-top: 34rpx;
+}
+
+.use_help:not(:last-child) {
+  border-right: 1rpx solid #e2e2e2;
+}
+
+.use_help image {
+  width: 52rpx;
+  height: 52rpx;
+  margin-bottom: 16rpx;
+  vertical-align: bottom;
+}
+
+.use_help text {
+  display: block;
+  width: 100%;
+  font-size: 28rpx;
+  line-height: 28rpx;
+  vertical-align: top;
+}
+
+formid {
+  display: block;
+  width: 100%;
+}
+
+.formid_112 > formid {
+  height: 112rpx;
+}
+
+.use_help > formid {
+  height: 96rpx;
+}
+.modal_view{
+  text-align: center;
+}

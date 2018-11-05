@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "component-user": "../user/user",
+    "formid": "../formId/formId"
+  }
+}

@@ -1,0 +1,42 @@
+page{
+  padding: 30rpx 0;
+  text-align: center;
+  background: white;
+}
+view{
+  padding: 0 30rpx;
+  width: calc(100vw - 60rpx);
+}
+.title{
+  padding: 0 30rpx;
+  font-size: 36rpx;
+  line-height: 36rpx;
+  color: #1fce86;
+  vertical-align: middle;
+  margin-bottom: 20rpx;
+  text-align: left;
+}
+.title:before{
+  content: '';
+  width: 36rpx;
+  height: 36rpx;
+  background: #1fce86;
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 20rpx;
+}
+.content{
+  display: inline-block;
+  width: calc(100vw - 60rpx);
+  font-size: 24rpx;
+  line-height: 30rpx;
+  margin-bottom: 20rpx;
+  text-align: left;
+}
+image{
+  margin-bottom: 20rpx;
+}
+.content>view{
+  width: 100%;
+  padding: 0;
+}

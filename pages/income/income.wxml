@@ -1,0 +1,36 @@
+<!--user.wxml-->
+<view>
+  <view class="avatar_title">
+    <image src="../../imgs/login_bg.png" mode="scaleToFill"></image>
+    <view class="income_title">视频问诊总收入</view>
+    <view class="income_all">
+      <text>￥</text>
+      {{income.price}}
+    </view>
+    <view>问诊总数 {{income.count}}</view>
+  </view>
+  <view class="container" wx:if="{{income.list && income.list.length != 0}}">
+    <view class="container_view income_view">
+      <view class="income_list list_title">
+        <text class="income_time">时间</text>
+        <text class="income_count">订单总数</text>
+        <text class="income_price">总金额</text>
+      </view>
+      <view wx:for="{{list}}" wx:key="index" wx:for-item="item" class="income_list">
+        <text class="income_time">{{item.year}}-{{item.month}}</text>
+        <text class="income_count">{{item.count}}</text>
+        <text class="income_price">￥{{item.price}}</text>
+      </view>
+    </view>
+  </view>
+  <view wx:else class="nomsg_view">
+    <image src="../../imgs/nomsg.png"></image>
+    <view>暂无数据记录~</view>
+  </view>
+  <view class="getMore" wx:if="{{page<totalPage && isLoading}}" bindtap="handlePage">加载更多</view>
+  <view class="getMore" wx:if="{{!isLoading}}">
+    <image animation="{{animation}}" src="../../imgs/loading.png"></image>
+    正在加载
+  </view>
+  <view class="getMore" wx:if="{{page == totalPage && income.list && income.list.length != 0}}">暂无更多收入明细</view>
+</view>

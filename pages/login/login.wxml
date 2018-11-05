@@ -1,0 +1,15 @@
+<!--setpwd.wxml-->
+<view class="container">
+  <form action="" bindsubmit="formSubmit" report-submit="true">
+    <view class="container_view login_view">
+      <image class="user_image" src="../../imgs/user_image.png"></image>
+      <image class="pwd_image" src="../../imgs/pwd_image.png"></image>
+      <input class="user_name common_input" bindinput="handleInput0" name="phone" placeholder-class="phcolor"
+             placeholder="请输入用户名"/>
+      <input class="user_pwd common_input" bindinput="handleInput1" type="password" name="password"
+             placeholder-class="phcolor" placeholder="请输入密码"/>
+    </view>
+    <text class="forget_pwd" bindtap="handleForget">忘记密码？</text>
+    <button class="btn_primary {{isgreen}}" formType="{{isgreen ? 'submit' : ''}}">提交</button>
+  </form>
+</view>

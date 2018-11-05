@@ -1,0 +1,9 @@
+<!--user.wxml-->
+<view>
+  <component-user></component-user>
+  <view class="img_view">
+    <image class="nologin_image" src="../../imgs/nologin_img.png"></image>
+    <text class="no_login_text">您还没有登录呦！请先登录</text>
+    <button class="btn_green" bindtap="goLogin">登录</button>
+  </view>
+</view>

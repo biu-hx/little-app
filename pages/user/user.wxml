@@ -1,0 +1,8 @@
+<view class="avatar_title" style="height:{{comheight}}rpx">
+  <image src="../../imgs/login_bg.png" style="height:{{comheight}}rpx" mode="scaleToFill"></image>
+  <view class="avatar_view">
+    <open-data class="user_avatar" type="userAvatarUrl"></open-data>
+  </view>
+  <view wx:if="{{name}}" class="user_name">{{name}}</view>
+  <open-data wx:else class="user_name" type="userNickName"></open-data>
+</view>

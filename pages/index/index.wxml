@@ -1,0 +1,90 @@
+<!--user.wxml-->
+<view>
+  <component-user comheight="330" name="{{name}}"></component-user>
+  <view class="container index_container{{classmsg}}">
+    <view class="container_view mb16 p37" wx:if="{{data}}">
+      <view class="index_msg" data-dataid="{{data.callId}}" bindtap="handleCall">
+        <image src="../../imgs/msg.png"></image>
+        <text>你有一条新问诊</text>
+        <button class="btn_call">立即回拨 {{data.restTime}}s</button>
+      </view>
+    </view>
+    <view class="container_view mb16">
+      <formid bindtap="goIncome">
+        <view class="index_price">
+          <image class="index_right_image" src="../../imgs/price.png"></image>
+          <view class="index_right">
+            <text>收入统计</text>
+            <image src="../../imgs/arrow_right.png"></image>
+          </view>
+        </view>
+      </formid>
+      <formid bindtap="goRecord">
+        <view class="index_price">
+          <image src="../../imgs/consult.png"></image>
+          <view class="index_right">
+            <text>问诊记录</text>
+            <image src="../../imgs/arrow_right.png"></image>
+          </view>
+        </view>
+      </formid>
+      <view class="index_price">
+        <image src="../../imgs/online.png"></image>
+        <view class="index_right borderno">
+          <text>设置上下线</text>
+          <switch checked="{{isChecked}}" bindchange="switchChange"/>
+        </view>
+      </view>
+    </view>
+    <view class="container_view p25 mb16">
+      <view class="more_function">账户相关</view>
+      <view class="more_list">
+        <view class="use_help" bindtap="handlePer">
+          <formid>
+            <image src="../../imgs/personal.png"></image>
+            <text>个人资料</text>
+          </formid>
+        </view>
+        <view class="use_help" bindtap="handlepwd">
+          <formid>
+            <image src="../../imgs/resetpwd.png"></image>
+            <text>重置密码</text>
+          </formid>
+        </view>
+        <view class="use_help" bindtap="handleLogout">
+          <formid>
+            <image src="../../imgs/loginout.png"></image>
+            <text>退出登陆</text>
+          </formid>
+        </view>
+      </view>
+    </view>
+    <view class="container_view p25 mb16">
+      <view class="more_function">更多功能</view>
+      <view class="more_list">
+        <view class="use_help" bindtap="goHelp">
+          <formid>
+            <image src="../../imgs/help.png"></image>
+            <text>使用帮助</text>
+          </formid>
+        </view>
+        <view class="use_help">
+          <formid>
+            <image src="../../imgs/upload.png"></image>
+            <text>安卓客户端下载</text>
+          </formid>
+        </view>
+      </view>
+    </view>
+
+    <form bindsubmit="saveFormId" report-submit="true">
+      <button formType="submit">
+        <modal hidden="{{hidden}}"
+               cancel-text='忙，不接' confirm-text='接听'
+               confirm-color='#1fcd86' bindconfirm="handleCallConfirm" bindcancel="handleCallCancel">
+          <view class="modal_view">您有一条新的视频咨询</view>
+        </modal>
+      </button>
+    </form>
+  </view>
+</view>

@@ -1,0 +1,11 @@
+<view class="container">
+  <view class="userinfo" wx:if="{{!hasUserInfo && canIUse && getUserInfoFail}}">
+    <button class="btn_souquan" open-type="getUserInfo"
+            bindgetuserinfo="getUserInfo">点击获得微信授权
+    </button>
+    <text>小程序需要您的微信授权才能使用</text>
+  </view>
+  <picker class="userinfo" wx:if="{{pickerShow}}" mode="selector" bindchange="bindPickerChange" bindcancel="bindPickerCancel" value="{{index}}" range="{{versionList}}" range-key="name">
+    <button class="btn_souquan">请选择您要使用的版本</button>
+  </picker>
+</view>

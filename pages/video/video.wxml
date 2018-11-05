@@ -1,0 +1,38 @@
+<view class="video_cover">
+  <view class="video_loading" wx:if="{{isLoading}}">
+    <view class="rotate_loading">
+      <image animation="{{animation}}" mode="scaleToFill" class="loading_rotate"
+             src="../../imgs/loading_rotate.png"></image>
+      <image class="loading_center" src="../../imgs/loading_center.png"></image>
+    </view>
+    <text class="rotate_text">视频连接中，请稍后...</text>
+  </view>
+  <view class="video_view" wx:else>
+    <view class="video_doctor">
+      <live-pusher id="pusher" url="{{pushUrl}}" mode="RTC" autopush
+                   bindstatechange="statechange1" beauty="5" whiteness="5"
+                   max-bitrate="500" audio-quality="high"
+                   binderror="pushError" bindnetstatus="playerChange">
+      </live-pusher>
+    </view>
+    <view class="video_chat">
+      <live-player id="player" src="{{playUrl}}" mode="RTC" object-fit="fillCrop" autoplay bindstatechange="statechange"
+                   binderror="error" bindnetstatus="pusherChange">
+        <cover-view class="fixed_list">
+          <cover-view class="video_item" bindtap="handleYiZhu">
+            <cover-image class="video_cover-image" src="../../imgs/yizhu.png"></cover-image>
+            <cover-view class="video_text">医嘱</cover-view>
+          </cover-view>
+          <cover-view class="video_item" bindtap="handleCall">
+            <cover-image class="video_cover-image" src="../../imgs/guaduan.png"></cover-image>
+            <cover-view class="video_text">挂断</cover-view>
+          </cover-view>
+          <cover-view class="video_item" bindtap="handleBingLi">
+            <cover-image class="video_cover-image" src="../../imgs/bingli.png"></cover-image>
+            <cover-view class="video_text">病历/报告</cover-view>
+          </cover-view>
+        </cover-view>
+      </live-player>
+    </view>
+  </view>
+</view>
